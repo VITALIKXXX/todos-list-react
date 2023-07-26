@@ -4,6 +4,22 @@ Description
 
 # Getting Started with Create React App
 
+## DEMO
+https://vitalikxxx.github.io/todos-list-react/
+
+## Technologies used:
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Grid
+- React
+- Flex
+
+## This is my Tasks-List without interactions yet !!!
+
+![Animation](https://raw.githubusercontent.com/VITALIKXXX/todos-list-react/07b9b6b30bff48d0d0284750fa30237c13408303/public/Animation%20Homepage%201.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
