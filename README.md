@@ -16,7 +16,7 @@ https://vitalikxxx.github.io/todos-list-react/
 - React
 - Flex
 
-## This is my Tasks-List without interactions yet !!!
+## This is my Tasks-List with interactions !!!
 
 ![Animation](https://github.com/VITALIKXXX/todos-list-react/blob/main/public/images/Animation%20Homepage%201.gif?raw=true)
 
