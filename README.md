@@ -18,7 +18,7 @@ https://vitalikxxx.github.io/todos-list-react/
 
 ## This is my Tasks-List without interactions yet !!!
 
-![Animation](https://raw.githubusercontent.com/VITALIKXXX/todos-list-react/07b9b6b30bff48d0d0284750fa30237c13408303/public/Animation%20Homepage%201.gif)
+![Animation](https://github.com/VITALIKXXX/todos-list-react/blob/main/public/images/Animation%20Homepage%201.gif?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
