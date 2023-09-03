@@ -6,8 +6,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
