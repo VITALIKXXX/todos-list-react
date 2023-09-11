@@ -1,6 +1,7 @@
 import "./style.css";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
+
     return (
 
         <ul className="tasks">
