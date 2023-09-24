@@ -1,27 +1,27 @@
-.buttons {
+import styled from "styled-components";
+
+export const StyledButtons = styled.div`
     display: flex;
     flex-wrap: wrap;
-}
+`;
 
-.buttons__button {
+export const HideDone = styled.button`
     background: transparent;
     color: teal;
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
-}
 
-@media(max-width: 767px) {
-    .buttons__button {
+    @media(max-width: 767px) {
         flex-basis: 100%;
         margin: 10px;
-    }
 }
 
-.buttons__button:hover {
+&:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.buttons__button:disabled {
+&:disabled {
     color: #ccc;
 }
+`;
