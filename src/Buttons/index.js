@@ -1,17 +1,17 @@
-import { StyledButtons, HideDone } from "./styled";
+import { StyledButtons, Button } from "./styled";
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     <StyledButtons>
         {tasks.length > 0 && (
             <>
-                <HideDone onClick={toggleHideDone}>
+                <Button onClick={toggleHideDone}>
                     {hideDone ? "Pokaz" : "Ukryj"} ukonczone
-                </HideDone>
-                <HideDone
+                </Button>
+                <Button
                     onClick={setAllDone}
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukoncz wszystkie
-                </HideDone>
+                </Button>
             </>
         )}
     </StyledButtons >

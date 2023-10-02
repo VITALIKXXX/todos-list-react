@@ -5,9 +5,9 @@ export const StyledButtons = styled.div`
     flex-wrap: wrap;
 `;
 
-export const HideDone = styled.button`
+export const Button = styled.button`
     background: transparent;
-    color: teal;
+    color: ${({ theme }) => theme.colors.primeriColors};
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;

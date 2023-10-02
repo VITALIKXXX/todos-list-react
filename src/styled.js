@@ -16,3 +16,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 `;
+export const theme = {
+  background: {
+      backgroundColors: "white"
+  },
+  colors: {
+      primeriColors: "teal"
+  },
+};
