@@ -1,4 +1,3 @@
-import { useTasks } from '../../useTasks';
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
@@ -8,17 +7,8 @@ import { Container } from "../../common/Container";
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styled';
 
-function Tasks() {
 
-  const {
-    tasks,
-    hideDone,
-    toggleHideDone,
-    removeTask,
-    toggleTaskDone,
-    setAllDone,
-    addNewTask
-  } = useTasks();
+function Tasks() {
 
   return (
     <ThemeProvider theme={theme}>
@@ -26,26 +16,12 @@ function Tasks() {
         <Header title="Lista zadan" />
         <Section
           title="Dodaj nowe zadanie"
-          body={<Form addNewTask={addNewTask} />}
+          body={<Form />}
         />
         <Section
           title="Lista zadan"
-          body={
-            <TasksList
-              tasks={tasks}
-              hideDone={hideDone}
-              removeTask={removeTask}
-              toggleTaskDone={toggleTaskDone}
-            />
-          }
-          extraHeaderContent={
-            <Buttons
-              tasks={tasks}
-              hideDone={hideDone}
-              toggleHideDone={toggleHideDone}
-              setAllDone={setAllDone}
-            />
-          }
+          body={<TasksList />}
+          extraHeaderContent={<Buttons />}
         />
       </Container >
     </ThemeProvider>

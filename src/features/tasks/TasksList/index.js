@@ -1,9 +1,11 @@
+import { useSelector } from "react-redux/es/hooks/useSelector";
 import { List, Item, Content, Button } from "./styled"
-
-const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
-
+import { selectTasks, toggleTaskDone, removeTasks } from "../tasksSlice";
+import { useDispatch } from "react-redux";
+const TasksList = () => {
+    const { tasks, hideDone } = useSelector(selectTasks);
+    const dispatch = useDispatch();
     return (
-
         <List>
             {tasks.map(task => (
                 <Item
@@ -12,7 +14,7 @@ const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
                 >
                     <Button
                         toggleDone
-                        onClick={() => toggleTaskDone(task.id)}
+                        onClick={() => dispatch(toggleTaskDone(task.id))}
                     >
                         {task.done ? " ✓" : ""}
                     </Button>
@@ -23,7 +25,7 @@ const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
 
                     <Button
                         remove
-                        onClick={() => removeTask(task.id)}
+                        onClick={() => dispatch(removeTasks(task.id))}
                     >
                         🗑️
                     </Button>
