@@ -23,6 +23,7 @@ export const FormButton = styled.button`
     color: white;
     border: none;
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
         background: hsl(180, 100%, 30%);

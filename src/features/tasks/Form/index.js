@@ -4,7 +4,6 @@ import { nanoid } from '@reduxjs/toolkit';
 import { StyledForm, FormInput, FormButton } from './styled';
 import { addTask } from '../tasksSlice';
 
-
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
 

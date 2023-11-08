@@ -11,6 +11,7 @@ export const Button = styled.button`
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
+    cursor: pointer;
 
     @media(max-width: 767px) {
         flex-basis: 100%;

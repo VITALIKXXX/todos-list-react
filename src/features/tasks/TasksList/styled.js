@@ -7,6 +7,14 @@ export const List = styled.ul`
 
 `;
 
+export const Message = styled.p`
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #279d8f;
+
+`;
+
 export const Item = styled.li`
     display: grid;
     grid-template-columns: auto 1fr auto;
