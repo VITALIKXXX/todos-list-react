@@ -13,8 +13,8 @@ const tasksSlice = createSlice({
         toggleHideDone: state => {
             state.hideDone = !state.hideDone;
         },
-        toggleTaskDone: ({ tasks }, { payload }) => {
-            const index = tasks.findIndex(({ id }) => id === payload);
+        toggleTaskDone: ({ tasks }, { payload: taskId }) => {
+            const index = tasks.findIndex(({ id }) => id === taskId);
             tasks[index].done = !tasks[index].done;
         },
         removeTasks: (state, action) => {
@@ -29,11 +29,12 @@ const tasksSlice = createSlice({
 });
 
 export const { addTask, toggleHideDone, toggleTaskDone, removeTasks, setAllDone } = tasksSlice.actions;
-export const selectAllTasksDone = state => state.tasks.tasks.every(task => task.done)
 export const selectShowMessage = state => {
     const { tasks, hideDone } = state.tasks;
     return (
         tasks.lenght === 0 || (hideDone && tasks.every(task => task.done)));
 };
 export const selectTasksState = state => state.tasks;
+export const selectTasks = state => selectTasksState(state).tasks;
+export const selectAllTasksDone = state => selectTasks(state).every(task => task.done)
 export default tasksSlice.reducer;
