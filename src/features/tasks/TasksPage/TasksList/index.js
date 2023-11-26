@@ -9,8 +9,8 @@ const TasksList = () => {
     const serchParams = new URLSearchParams(location.search);
     const query = serchParams.get("szukaj");
 
-    const { tasks } = useSelector(state => selectTasksByQuery(state, query));
-    const { hideDone } = useSelector(selectAllTasksDone)
+    const tasks = useSelector(state => selectTasksByQuery(state, query));
+    const hideDone = useSelector(selectAllTasksDone)
     const showMessage = useSelector(selectShowMessage)
 
     const dispatch = useDispatch();

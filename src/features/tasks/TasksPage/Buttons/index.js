@@ -5,7 +5,8 @@ import { selectTasks, toggleHideDone, setAllDone, selectAllTasksDone, fetchExapl
 
 const Buttons = () => {
     const allTasksDone = useSelector(selectAllTasksDone)
-    const { tasks, hideDone } = useSelector(selectTasks);
+    const tasks = useSelector(selectTasks);
+    const hideDone = useSelector(selectAllTasksDone);
     const dispatch = useDispatch();
 
     return (
