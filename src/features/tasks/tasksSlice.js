@@ -43,7 +43,7 @@ export const {
     setTasks
 } = tasksSlice.actions;
 
-export const selectTasksState = state => state.tasks;
+ const selectTasksState = state => state.tasks;
 
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectAllTasksDone = state => selectTasks(state).every(task => task.done)
@@ -57,7 +57,7 @@ export const getTaskById = (state, taskId) =>
     selectTasks(state).find(({ id }) => id === taskId)
 
 export const selectTasksByQuery = (state, query) => {
-    const tasks = selectTasksState(state);
+    const tasks = selectTasks(state);
 
     if (!query || query.trim() === "") {
         return tasks;
