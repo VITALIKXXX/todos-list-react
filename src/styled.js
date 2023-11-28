@@ -1,26 +1,12 @@
-import {createGlobalStyle} from "styled-components";
+import { NavLink } from "react-router-dom"
+import styled from "styled-components"
 
-export const GlobalStyled = createGlobalStyle`
-html {
-  box-sizing: border-box;
-}
+const activeClassName = "active";
 
-*,
-::after,
-::before {
-  box-sizing: inherit;
-}
-
-body {
-  background: #eee;
-  font-family: 'Montserrat', sans-serif;
+export const StyledNavLink = styled(NavLink).attrs(() => ({
+    activeClassName,
+}))`
+&.${activeClassName}{
+    color: red;
 }
 `;
-export const theme = {
-  background: {
-      backgroundColors: "white"
-  },
-  colors: {
-      primeriColors: "teal"
-  },
-};

@@ -5,7 +5,8 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Container } from "../../../common/Container";
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../../styled';
+import { theme } from '../../../theme';
+import Searcz from './Searcz';
 
 function TasksPage() {
   return (
@@ -15,6 +16,10 @@ function TasksPage() {
         <Section
           title="Dodaj nowe zadanie"
           body={<Form />}
+        />
+        <Section
+          title="Wyszukiwarka"
+          body={<Searcz />}
         />
         <Section
           title="Lista zadan"

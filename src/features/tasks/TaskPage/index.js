@@ -2,7 +2,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Container } from "../../../common/Container";
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../../styled';
+import { theme } from '../../../theme';
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
