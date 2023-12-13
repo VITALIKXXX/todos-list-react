@@ -1,13 +1,13 @@
 import { useSelector } from "react-redux/es/hooks/useSelector";
-import { List, Item, Content, Button, Message } from "./styled"
+import { List, Item, Content, Button, Message, StyledLink } from "./styled"
 import { toggleTaskDone, removeTasks, selectShowMessage, selectTasksByQuery, selectAllTasksDone } from "../../tasksSlice";
 import { useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom/cjs/react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
+import { toTask } from "../../../../routes";
+import { useQueryParameter } from "../queryParameters";
 
 const TasksList = () => {
-    const location = useLocation();
-    const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
+    const query = useQueryParameter(searchQueryParamName);
 
     const tasks = useSelector(state => selectTasksByQuery(state, query));
     const hideDone = useSelector(selectAllTasksDone)
@@ -17,7 +17,7 @@ const TasksList = () => {
 
     return (
         <List>
-            {showMessage ? (
+            {showMessage && tasks.length > 0 && hideDone && tasks.every(task => task.done) ? (
                 <Item>
                     <Message>Ukonczone zadania sa ukryte😉!!!</Message>
                 </Item>
@@ -35,7 +35,7 @@ const TasksList = () => {
                         </Button>
 
                         <Content done={task.done}>
-                            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+                            <StyledLink to={toTask({ id: task.id })}>{task.content}</StyledLink>
                         </Content>
 
                         <Button
