@@ -1,9 +1,16 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+
+`;
+
+export const StyledLink = styled(Link)`
+text-decoration: none;
+color: hsl(180, 100%, 25%);
 
 `;
 
