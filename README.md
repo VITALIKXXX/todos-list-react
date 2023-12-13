@@ -22,7 +22,7 @@ https://vitalikxxx.github.io/todos-list-react/
 
 ## This is my Tasks-List with interactions !!!
 
-![Animation](https://raw.githubusercontent.com/VITALIKXXX/todos-list-react/3c568d9a1033b9965e2a6d491653fb65c15c2eeb/public/images/Animation%20%20NEW.gif)
+![Animation](https://raw.githubusercontent.com/VITALIKXXX/todos-list-react/4ba06fa23fd664ef8dd7aca142fb763e439c21bb/public/images/Animation%20%20NEWwww.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
