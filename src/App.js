@@ -4,6 +4,7 @@ import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 import Navigation from "./Navigation";
 import { toAuthor, toTask, toTasks } from "./routes";
+
 const App = () => (
     <HashRouter>
         <Navigation />

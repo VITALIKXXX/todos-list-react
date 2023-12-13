@@ -4,8 +4,6 @@ import Header from "../../common/Header";
 import Section from "../../common/Section";
 import { theme } from "../../theme";
 
-
-
 export default () => (
     <ThemeProvider theme={theme}>
         <Container>

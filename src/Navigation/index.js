@@ -1,7 +1,6 @@
 import { toAuthor, toTasks } from "../routes";
 import { List, Item, StyledNavLink } from "./styled"
 
-
 const Navigation = () => {
     return (
 

@@ -6,9 +6,7 @@ import { addTask } from '../../tasksSlice';
 
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
-
     const dispatch = useDispatch();
-
     const onFormSubmit = (event) => {
         event.preventDefault();
 

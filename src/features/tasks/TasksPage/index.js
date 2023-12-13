@@ -9,9 +9,6 @@ import { theme } from '../../../theme';
 import Searcz from './Searcz';
 import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
-
-
-
 function TasksPage() {
   return (
     <ThemeProvider theme={theme}>
