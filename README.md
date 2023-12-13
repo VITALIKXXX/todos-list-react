@@ -15,7 +15,10 @@ https://vitalikxxx.github.io/todos-list-react/
 - Grid
 - React
 - Flex
-- Redux
+- React-Redux
+- Redux-Saga
+- Redux-toolkit
+- React-Router
 
 ## This is my Tasks-List with interactions !!!
 
