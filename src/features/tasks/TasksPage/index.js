@@ -7,6 +7,10 @@ import { Container } from "../../../common/Container";
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../theme';
 import Searcz from './Searcz';
+import FetchExampleTasksButton from "./FetchExampleTasksButton";
+
+
+
 
 function TasksPage() {
   return (
@@ -14,12 +18,14 @@ function TasksPage() {
       <Container>
         <Header title="Lista zadan" />
         <Section
-          title="Dodaj nowe zadanie"
+          title={"Dodaj nowe zadanie"}
+          extraHeaderContent={<FetchExampleTasksButton />}
           body={<Form />}
         />
         <Section
           title="Wyszukiwarka"
           body={<Searcz />}
+          
         />
         <Section
           title="Lista zadan"
