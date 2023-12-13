@@ -21,6 +21,7 @@ export const theme = {
       backgroundColors: "white"
   },
   colors: {
-      primeriColors: "teal"
+      primeriColors: "teal",
+      white: "#ffffff",
   },
 };
