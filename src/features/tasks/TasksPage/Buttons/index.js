@@ -1,7 +1,14 @@
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
-import { StyledButtons, Button } from "./styled";
-import { selectTasks, toggleHideDone, setAllDone, selectAllTasksDone, fetchExapleTasks, selectTasksDone } from "../../tasksSlice";
+import { StyledButtons } from "./styled";
+import {
+    selectTasks,
+    toggleHideDone,
+    setAllDone,
+    selectAllTasksDone,
+    selectTasksDone
+} from "../../tasksSlice";
+import { Button } from "../Button";
 
 const Buttons = () => {
     const tasks = useSelector(selectTasks);
@@ -11,9 +18,6 @@ const Buttons = () => {
 
     return (
         <StyledButtons>
-            <Button onClick={() => dispatch(fetchExapleTasks())}>
-                Pobierz przykladowe zadania
-            </Button>
             {tasks && tasks.length > 0 && (
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}>
