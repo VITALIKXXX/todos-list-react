@@ -27,7 +27,7 @@ export const FormButton = styled.button`
 
     &:hover {
         background: hsl(180, 100%, 30%);
-        transform: scale(1.1);
+        transform: scale(1.03);
     }
 
     &:active {
